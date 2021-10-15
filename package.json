@@ -1,0 +1,19 @@
+{
+  "name": "desafio0802",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "nodemon index"
+  },
+  "author": "Dario Valenzuela",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "bootstrap": "^5.1.3",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.4",
+    "jquery": "^3.6.0"
+  }
+}

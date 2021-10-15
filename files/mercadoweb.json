@@ -1,0 +1,9 @@
+{"productos":[
+    {"nombre": "bananas", "img": "banana.png", "precio": 990 },
+    {"nombre": "cebollas", "img": "cebollas.png", "precio": 950 },
+    {"nombre": "lechugas", "img": "lechuga.png", "precio": 790 },
+    {"nombre": "papas", "img": "papas.png", "precio": 2250 },
+    {"nombre": "pimentón", "img": "pimenton.png", "precio": 2490 },
+    {"nombre": "tomates", "img": "tomate.png", "precio": 1000 }
+]
+}

@@ -1,0 +1,12 @@
+
+
+<div class="card m-4 col4" style="width: 10rem;" id="prod-{{ @index }}">
+    <img src="/imagenes/{{ this.img }}" class="card-img-top" alt={{ this.nombre }}>
+    <div class="card-body text-center">
+        <h5 class="card-title">{{ this.nombre }}</h5>
+        <h6> ({{ this.precio }} $/kg)</h6>
+
+        <a href="#" class="btn btn-success" onclick="comprarProducto('{{ this.img }}', '{{ this.nombre }}', {{ this.precio }})">comprar</a>
+    </div>
+</div>
+
