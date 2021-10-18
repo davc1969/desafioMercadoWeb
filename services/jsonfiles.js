@@ -3,7 +3,7 @@ const fs = require("fs");
 
 const readJSONfile = (filename) => {
     return new Promise ((resolve, reject) => {
-        fs.readFile(path.join(__dirname, "../", filename), null, async (err, data) => {
+        fs.readFile(path.join(filename), null, async (err, data) => {
             if (err) {
                 console.log("Error en lectura de datos JSON ", err.message);
                 reject(err);
@@ -23,7 +23,7 @@ const addToJSONfile = (filename, dato) => {
         return JSON.stringify(data);
     })
     .then( (JSONData) => {
-        fs.writeFile(path.join(__dirname, "../", filename), JSONData, (error) => {
+        fs.writeFile(filename, JSONData, (error) => {
             if (error) {
                 throw error
             }
@@ -43,7 +43,7 @@ const clearJSONfile = (filename) => {
     })
     .then( (JSONData) => {
         console.log("JS", JSONData);
-        fs.writeFile(path.join(__dirname, "../", filename), JSONData, (error) => {
+        fs.writeFile(filename, JSONData, (error) => {
             if (error) {
                 throw error
             }

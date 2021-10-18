@@ -32,8 +32,9 @@
     </div>
 
     {{# if usuario }}
-        <p class="navbar-brand"> Hola, {{ usuario }} </p>
+        <a class="navbar-brand" href="#" id="exitUser">Hola {{ usuario }}</a>
     {{ else }}
-        <p class="navbar-brand">Usuario no registrado</p>
+        <a class="navbar-brand" href="#" id="enterUser">Ingresar</a>
+        <i class="far fa-user mx-3 fa-2x text-white"></i>
     {{/ if }}
 </nav>
