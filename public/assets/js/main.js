@@ -10,7 +10,7 @@ function comprarProducto(imagen, nombre, precio) {
     $("#modalCompra").modal('show');
 };
 
-//const botonAgregarProducto = document.getElementById("agregarProducto");
+
 document.getElementById("agregarProducto").addEventListener("click", async (event) => {
     event.defaultPrevented;
     const productoComprado = document.getElementById("nombreCompra").innerHTML;
@@ -38,7 +38,7 @@ document.getElementById("agregarProducto").addEventListener("click", async (even
 });
 
 
-//const botonUsuario = document.getElementById("enterUser");
+
 document.getElementById("enterUser").addEventListener("click", (event) => {
     event.preventDefault;
     console.log("Boton usuario presionado");
@@ -47,7 +47,6 @@ document.getElementById("enterUser").addEventListener("click", (event) => {
 
 
 
-//const botonIngreso = document.getElementById("botonUsuarioIngresado");
 document.getElementById("botonUsuarioIngresado").addEventListener("click", async (event) => {
     event.preventDefault;
 
@@ -58,24 +57,6 @@ document.getElementById("botonUsuarioIngresado").addEventListener("click", async
     $("#modalUsuario").modal('hide');
     location.reload();
 
-
-    // try {
-    //     const response = await fetch("/usuarios", {
-    //         method: "post",
-    //         headers: { 'Content-Type': 'application/json' },
-    //         body: JSON.stringify({
-    //             "nombre": nombreUsuario,
-    //             "password": passwordUsuario
-    //         })
-    //     });
-    // } catch (error) {
-    //     console.log("Error agregando usuario, ", error.message);
-    // } finally {
-    //     console.log("Llegamos al finall");
-    //     $("#modalUsuario").modal('hide');
-    //     location.reload();
-        
-    // }
 });
 
 
@@ -85,3 +66,5 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById("enterUser").innerHTML = `Hola ${usuario}`;
     }
 });
+
+
